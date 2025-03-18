@@ -1,12 +1,12 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException # type: ignore
+from fastapi.middleware.cors import CORSMiddleware # type: ignore
+from pydantic import BaseModel # type: ignore
 from typing import List, Dict, Optional, Any
-import google.generativeai as genai
+import google.generativeai as genai # type: ignore
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 import json
-import requests
+import requests # type: ignore
 
 # Load environment variables
 load_dotenv()
