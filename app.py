@@ -227,7 +227,7 @@ I'll use this information to provide personalized responses throughout our conve
                 response_text = data["candidates"][0]["content"]["parts"][0]["text"]
                 return {
                     "reply": response_text,
-                    "updated_context": None,
+                    "updated_context": None
                 }
             else:
                 print("Unexpected API response:", data)  # Log the unexpected response
